@@ -145,8 +145,9 @@
   /* cake */
   .cake{display:flex; flex-direction:column; gap:12px; margin:22px 0}
   .layer{display:flex; align-items:center; gap:18px; border:1px solid var(--line); border-radius:14px; padding:16px 22px}
-  .layer .lb{font-size:12px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; color:var(--mint); min-width:96px}
+  .layer .lb{font-size:12px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; color:var(--mint); min-width:146px}
   .layer .lt{font-size:15.5px; color:#d7e6df}
+  @media(max-width:640px){ .layer{flex-direction:column; align-items:flex-start; gap:8px} .layer .lb{min-width:0} }
   .cl1{background:rgba(41,230,164,.05)} .cl2{background:rgba(41,230,164,.10)}
   .cl3{background:rgba(41,230,164,.16)} .cl4{background:rgba(41,230,164,.24)}
 
@@ -301,20 +302,21 @@
     <div class="callout reveal"><b>Regla de oro:</b> la similitud visual anula la diferencia narrativa. Dos guiones geniales grabados en el mismo set = para Meta, un solo anuncio.</div>
 
     <h3 class="h3 reveal">El "pastel creativo": 4 capas para crear diversidad a propósito</h3>
+    <p class="reveal">El producto no cambia: es la base fija. Lo que cambia —y lo que hace que Meta vea un anuncio realmente nuevo— son estas cuatro capas. Cambia una y ya tienes otro creativo; cámbialas todas y tienes un concepto nuevo.</p>
     <div class="cake">
-      <div class="layer cl4 reveal"><span class="lb">Vehículo</span><span class="lt">El <strong>formato</strong> con que lo entregas: podcast, testimonio, VSL, pantalla verde, escena en un supermercado…</span></div>
-      <div class="layer cl3 reveal d1"><span class="lb">Ángulo</span><span class="lt">El <strong>mensaje/historia</strong> puntual para esa persona. Cada persona admite ~20 ángulos.</span></div>
-      <div class="layer cl2 reveal d2"><span class="lb">Persona</span><span class="lt">Un <strong>ser humano con un dolor o deseo específico</strong> — no "mujeres 25-35". Un producto puede tener hasta 12 personas.</span></div>
-      <div class="layer cl1 reveal d3"><span class="lb">Producto</span><span class="lt">La <strong>base fija</strong>: lo que es, con sus beneficios.</span></div>
+      <div class="layer cl4 reveal"><span class="lb">Formato</span><span class="lt"><strong>Cómo se ve el creativo.</strong> Es la presentación visual: testimonio a cámara, voz en off con tomas de apoyo, pantalla verde, pantalla dividida, POV, unboxing, entrevista tipo podcast, VSL… Ojo: dos guiones distintos grabados en el mismo formato y el mismo entorno, para Meta, son un solo anuncio.</span></div>
+      <div class="layer cl3 reveal d1"><span class="lb">Punto de dolor</span><span class="lt"><strong>El síntoma concreto que le mostramos.</strong> Son los problemas puntuales que se desprenden de esa necesidad y que ella vive todos los días: la barriga hinchada después de almorzar, el pelo en la almohada, el olorcito que la hace dudar antes de salir. Uno por guión — es lo que hace que se reconozca en el anuncio y siga viendo.</span></div>
+      <div class="layer cl2 reveal d2"><span class="lb">Ángulo de venta</span><span class="lt"><strong>La razón por la que esa persona te compra.</strong> No es lo que el producto hace, es el motivo que la mueve a sacar la tarjeta: llegar bien al matrimonio de su hermana, dejar de gastar en tratamientos que no funcionan, volver a dormir. Un mismo producto tiene muchas razones de compra, y cada una es un anuncio distinto.</span></div>
+      <div class="layer cl1 reveal d3"><span class="lb">Persona o avatar</span><span class="lt"><strong>A quién le estás hablando.</strong> Un ser humano con una necesidad específica — no "mujeres de 25 a 35". La mamá primeriza que no reconoce su cuerpo, la ejecutiva de 40 que duerme cinco horas. Todo lo demás se decide después de saber quién es ella.</span></div>
     </div>
-    <p class="vcap reveal">Se lee de abajo hacia arriba: cada capa multiplica la anterior.</p>
+    <p class="vcap reveal">Se lee de abajo hacia arriba: primero defines a quién le hablas, luego por qué te compra, luego qué dolor le muestras y al final cómo lo grabas.</p>
 
     <h3 class="h3 reveal">Un mismo producto, tres anuncios que Meta ve como nuevos</h3>
-    <p class="muted reveal" style="text-align:center;margin-top:0">Mismo producto (una crema) → <strong style="color:#fff">persona + ángulo + vehículo distintos</strong></p>
+    <p class="muted reveal" style="text-align:center;margin-top:0">Mismo producto (una crema) → <strong style="color:#fff">persona + ángulo de venta + punto de dolor + formato distintos</strong></p>
     <div class="dgrid">
-      <div class="dcard reveal"><div class="emoji">🧑‍🍼</div><div class="role">Mamá primeriza</div><div class="meta">Ángulo: "recupera tu piel después del embarazo" · Vehículo: testimonio en su cuarto</div><div class="badge">ANUNCIO NUEVO</div></div>
-      <div class="dcard reveal d1"><div class="emoji">💼</div><div class="role">Ejecutiva 40+</div><div class="meta">Ángulo: "se ve el cansancio de las reuniones" · Vehículo: figura de autoridad / dermatóloga</div><div class="badge">ANUNCIO NUEVO</div></div>
-      <div class="dcard reveal d2"><div class="emoji">🏃‍♀️</div><div class="role">Deportista</div><div class="meta">Ángulo: "el sol y el sudor te envejecen" · Vehículo: POV al aire libre</div><div class="badge">ANUNCIO NUEVO</div></div>
+      <div class="dcard reveal"><div class="emoji">🧑‍🍼</div><div class="role">Mamá primeriza</div><div class="meta"><b>Ángulo:</b> volver a sentirse ella misma<br><b>Dolor:</b> estrías y piel flácida después del parto<br><b>Formato:</b> testimonio a cámara en su cuarto</div><div class="badge">ANUNCIO NUEVO</div></div>
+      <div class="dcard reveal d1"><div class="emoji">💼</div><div class="role">Ejecutiva 40+</div><div class="meta"><b>Ángulo:</b> verse tan despierta como se siente capaz<br><b>Dolor:</b> ojeras y cara de cansancio en cada reunión<br><b>Formato:</b> figura de autoridad / dermatóloga</div><div class="badge">ANUNCIO NUEVO</div></div>
+      <div class="dcard reveal d2"><div class="emoji">🏃‍♀️</div><div class="role">Deportista</div><div class="meta"><b>Ángulo:</b> cuidar su piel sin dejar de entrenar<br><b>Dolor:</b> manchas y resequedad por el sol y el sudor<br><b>Formato:</b> POV al aire libre</div><div class="badge">ANUNCIO NUEVO</div></div>
     </div>
 
     <div class="callout reveal"><b>Qué significa para TU guión:</b> cada guión debe atacar un punto de dolor diferente, desde un ángulo diferente, con un formato diferente. No repitas dolores, CTAs ni estructuras. Tu trabajo no es "un buen anuncio": es aportar diversidad al ecosistema del cliente.</div>
@@ -414,8 +416,9 @@
       </div>
       <div class="card reveal d1">
         <h3>Uso de IA (bien hecho)</h3>
-        <p>Por ahora sugerimos <strong>ChatGPT</strong> como base, y para la redacción recomendamos apoyarte en <strong>Claude</strong>. Siempre ajustas desde tu criterio para que suene cercano y humano.</p>
-        <p>Buena práctica: pásale a la IA la landing del producto y pídele <em>"las 10 dudas principales que tiene alguien antes de comprar esto"</em>. Nunca entregues texto de IA en crudo.</p>
+        <p>Como base sugerimos <strong>Google Gemini</strong> para transcribir los videos de referencia y <strong>Claude</strong> para adaptarlos. Siempre ajustas desde tu criterio para que suene cercano y humano: nunca entregues texto de IA en crudo.</p>
+        <p>Sabemos que el flujo de trabajo de cada quien es distinto, y está bien. Lo que no cambia son los <strong>fundamentos</strong> y el <strong>estándar del resultado final</strong>.</p>
+        <p>Buena práctica: pásale a la IA la landing del producto y pídele <em>"las 10 dudas principales que tiene alguien antes de comprar esto"</em>.</p>
       </div>
     </div>
     <p class="note reveal">→ Documento completo: <a href="https://docs.google.com/document/d/1EMBR_-59yCvwZp8b0hSsezR9Y8hctj0TGvoXEMPutpA/edit" target="_blank">"Expectativas para el Copywriter"</a>.</p>
